@@ -82,6 +82,7 @@ public class Main {
         User user = authService.logIn(username, password);
         System.out.println("Welcome, " + user.getUsername() + "!");
         // TODO Later: Add the to-do list operations
+        ToDoList todoList = ToDoList(user);
     }
 
     /**
